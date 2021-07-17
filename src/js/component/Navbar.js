@@ -12,8 +12,8 @@ export function Navbar() {
 					dataToggle="collapse"
 					dataTarget="#navbarSupportedContent"
 					ariaControls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation">
+					ariaExpanded="false"
+					ariaLabel="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>
 				</button>
 
@@ -39,7 +39,7 @@ export function Navbar() {
 								role="button"
 								dataToggle="dropdown"
 								ariaHaspopup="true"
-								aria-expanded="false">
+								ariaExpanded="false">
 								Dropdown
 							</a>
 							<div
