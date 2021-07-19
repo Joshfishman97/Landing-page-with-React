@@ -3,7 +3,7 @@ export function Card() {
 	return (
 		<div
 			className="card text-center "
-			style={{ width: "18rem", height: "500px" }}>
+			style={{ width: "23%", height: "500px" }}>
 			<img
 				className="card-img-top"
 				src="https://via.placeholder.com/500x325/O https://placeholder.com/alt="
