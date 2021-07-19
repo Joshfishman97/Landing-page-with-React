@@ -1,34 +1,26 @@
 import React from "react";
 export function Navbar() {
 	return (
-		<div>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light">
+		<nav className="navbar navbar-expand-lg navbar-light bg-light">
+			<div className="container-fluid">
 				<a className="navbar-brand" href="#">
 					Navbar
 				</a>
-				<button
-					className="navbar-toggler"
-					type="button"
-					dataToggle="collapse"
-					dataTarget="#navbarSupportedContent"
-					ariaControls="navbarSupportedContent"
-					ariaExpanded="false"
-					ariaLabel="Toggle navigation">
+				<button className="navbar-toggler" type="button">
 					<span className="navbar-toggler-icon"></span>
 				</button>
-
 				<div
-					className="collapse navbar-collapse"
+					className="collapse navbar-collapse d-flex justify-content-end"
 					id="navbarSupportedContent">
-					<ul className="navbar-nav mr-auto">
-						<li className="nav-item active">
-							<a className="nav-link" href="#">
-								Home <span className="sr-only">(current)</span>
+					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+						<li className="nav-item">
+							<a className="nav-link active" href="#">
+								Home
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#">
-								Link
+								About
 							</a>
 						</li>
 						<li className="nav-item dropdown">
@@ -36,48 +28,41 @@ export function Navbar() {
 								className="nav-link dropdown-toggle"
 								href="#"
 								id="navbarDropdown"
-								role="button"
-								dataToggle="dropdown"
-								ariaHaspopup="true"
-								ariaExpanded="false">
-								Dropdown
+								role="button">
+								Services
 							</a>
-							<div
-								className="dropdown-menu"
-								ariaLabelledby="navbarDropdown">
-								<a className="dropdown-item" href="#">
-									Action
-								</a>
-								<a className="dropdown-item" href="#">
-									Another action
-								</a>
-								<div className="dropdown-divider"></div>
-								<a className="dropdown-item" href="#">
-									Something else here
-								</a>
-							</div>
+							<ul className="dropdown-menu">
+								<li>
+									<a className="dropdown-item" href="#">
+										Contact
+									</a>
+								</li>
+								<li>
+									<a className="dropdown-item" href="#">
+										Another action
+									</a>
+								</li>
+								<li>
+									<hr className="dropdown-divider" />
+								</li>
+								<li>
+									<a className="dropdown-item" href="#">
+										Something else here
+									</a>
+								</li>
+							</ul>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link disabled" href="#">
+							<a
+								className="nav-link disabled"
+								href="#"
+								tabIndex="-1">
 								Disabled
 							</a>
 						</li>
 					</ul>
-					<form className="form-inline my-2 my-lg-0">
-						<input
-							className="form-control mr-sm-2"
-							type="search"
-							placeholder="Search"
-							ariaLabel="Search"
-						/>
-						<button
-							className="btn btn-outline-success my-2 my-sm-0"
-							type="submit">
-							Search
-						</button>
-					</form>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	);
 }
